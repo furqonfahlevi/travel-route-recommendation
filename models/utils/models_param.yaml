@@ -1,0 +1,52 @@
+- model_name: Cat Swarm Optimization (CSO)
+  model_package: OriginalCSO
+  params:
+    epoch: 30
+    pop_size: 50
+    mixture_ratio: 0.3
+    smp: 5
+    spc: True
+    cdc: 0.8
+    srd: 0.15
+    c1: 2.05        
+    w_min: 0.4
+    w_max: 0.9
+    selected_strategy: 0
+
+- model_name: Artificial Bee Colony (ABC)
+  model_package: OriginalABC
+  params:
+    epoch: 30
+    pop_size: 100
+    n_elites: 16
+    n_others: 4
+    patch_size: 3.0
+    patch_reduction: 0.985
+    n_sites: 3
+    n_elite_sites: 1
+
+- model_name: Simulated Annealing (SA)
+  model_package: OriginalSA
+  params:
+    epoch: 30
+    pop_size: 50
+    max_sub_iter: 5
+    t0: 1000
+    t1: 1
+    move_count: 5
+    mutation_rate: 0.1
+    mutation_step_size: 0.1
+    mutation_step_size_damp: 0.99
+
+- model_name: Genetic Algorithm (GA)
+  model_package: GA
+  params:
+    epoch: 30
+    pop_size: 30
+    pc: 0.3
+    pm: 0.1
+
+- model_name: Brute Force (BF)
+  model_package: BF
+  params:
+    epoch: 1
